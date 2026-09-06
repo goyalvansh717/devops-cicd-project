@@ -23,3 +23,6 @@ jobs:
 
       - name: Build Docker image
         run: docker build -t goyalvansh717/devops-demo-app:latest .
+      
+      - name: push docker image
+        run: docker push goyalvansh717/devops-demo-app:latest
