@@ -22,4 +22,4 @@ jobs:
           password: ${{secrets.DOCKERHUB_TOKEN}}
 
       - name: Build Docker image
-        run: docker build -t devops-demo-app .
+        run: docker build -t goyalvansh717/devops-demo-app:latest .
