@@ -1,0 +1,13 @@
+name: CI
+on:
+  push:
+
+jobs:
+  build:
+    run-on: ubuntu-latest
+    step:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Build Docker image
+        run: docker build -t devops-demo-app .
